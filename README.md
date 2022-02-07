@@ -11,7 +11,9 @@
 
 # Text Steganography ( Hiding TEXT in TEXT ) :
 * In Unicode, there are specific zero-width characters (ZWC). We used four ZWCs for hiding the Secret Message through the Cover Text.
+
 ![image](https://user-images.githubusercontent.com/77832407/152797497-54ad8d79-9375-4c8a-9b7a-2b3586303d47.png)
+
 * We get its ascii value and it is incremented or decremented based on if ascii value between 32 and 64 , it is incremented by 48(ascii value for 0) else it is decremented by 48
 * Then xor the the obtained value with 170(binary equivalent-10101010) 
 * Convert the obtained number from first two step to its binary equivalent then add "0011" if it earlier belonged to ascii value between 32 and 64 else add "0110" making it 12       bit for each character.
